@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//determine the smallest of the three numbers.
+
+int main()
+{
+    int first, second, third, smallest;
+    printf("\nEnter the first number: ");
+    scanf("%d", &first);
+
+    printf("\nEnter the second number: ");
+    scanf("%d", &second);
+
+    printf("\nEnter the third number: ");
+    scanf("%d", &third);
+
+    if(first<second)
+    {
+        if(first<third)
+            smallest = first;
+        else
+            smallest = third;
+    }
+    else
+    {
+        if(second<third)
+            smallest = second;
+        else
+            smallest = third;
+    }
+
+    printf("\nThe smallest number out of the three numbers you entered is : %d\n", smallest);
+}
