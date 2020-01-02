@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//determine the largest of the three numbers.
+
+int main()
+{
+    int first, second, third, largest;
+    printf("\nEnter the first number: ");
+    scanf("%d", &first);
+
+    printf("\nEnter the second number: ");
+    scanf("%d", &second);
+
+    printf("\nEnter the third number: ");
+    scanf("%d", &third);
+
+    if(first>second)
+    {
+        if(first>third)
+            largest = first;
+        else
+            largest = third;
+    }
+    else
+    {
+        if(second>third)
+            largest = second;
+        else
+            largest = third;
+    }
+
+    printf("\nThe largest number out of the three numbers you entered is : %d\n", largest);
+}
