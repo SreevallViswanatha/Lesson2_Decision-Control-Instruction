@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//Check whether three points are co-linear
+
+int main()
+{
+    int x1, y1, x2, y2, x3, y3;
+    int slope1, slope2, slope3;
+    
+    printf("\nEnter the values of x1 and y1 coordinates of first point: ");
+    scanf("%d%d", &x1, &y1);
+    
+    printf("\nEnter the values of x2 and y2 coordinates of first point: ");
+    scanf("%d%d", &x2, &y2);
+    
+    printf("\nEnter the values of x3 and y3 coordinates of first point: ");
+    scanf("%d%d", &x3, &y3);
+    
+    //calculate the slope of line between each pair of points.
+    
+    if((slope1 == slope2)&&(slope1 == slope3))
+        printf("Points are Co-linear\n");
+    else
+        printf("Pints are NOT Co-linear\n");
+}
