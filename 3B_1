@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//Determine position of a point with respect to X and Y axes.
+
+int main()
+{
+    int x, y;
+
+    printf("\nEnter the x coordinate of a point: ");
+    scanf("%d", &x);
+
+    printf("\nEnter the y coordinate of a point: ");
+    scanf("%d", &y);
+
+    if(x==0 && y==0)
+    {
+        printf("\nPoint lies on Origin\n");
+    }
+
+    else
+    {
+        if(x==0 && y!=0)
+        {
+            printf("\nPoint lies on Y-axis\n");
+        }
+        else
+        {
+            if(x!=0 && y == 0)
+            {
+                printf("\nPoint lies on X-axis\n");
+            }
+            else
+            {
+                printf("\nPoint neither lies on any axis, nor origin\n");
+            }
+        }
+    }
+}
