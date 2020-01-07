@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-//Demonstrating of if statement
+//Demonstration of if statement
 
 int main()
 {
