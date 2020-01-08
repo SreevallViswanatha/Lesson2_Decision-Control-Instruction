@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-//determine the largest and change each to largest.
+//determine the largest and change each to largest
 int main()
 {
 
