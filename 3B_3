@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdlib.h>
+//Calculate the net amount.
+int main()
+{
+    float price, discount, Amount, net_amount, Total_discount, Tax, Total_amt;
+    int quantity;
+
+    printf("Enter the price: ");
+    scanf("%f", &price);
+
+    printf("Enter the quantity: ");
+    scanf("%d", &quantity);
+
+    if(quantity<=5)
+        discount = 0.1;
+    else
+        discount = 0.15;
+
+    Amount = (price * quantity);
+    Total_amt = Amount - (discount*Amount);
+
+    if(Total_amt >=10000)
+    {
+        Total_amt = Total_amt - (Total_amt * 0.5);
+        Total_discount = Amount - Total_amt;
+        Tax = 0.5 * Total_amt;
+        net_amount = Total_amt + Tax;
+    }
+    printf("Amount = %f\n", Amount);
+    printf("Discount = %f\n", Total_discount);
+    printf("Tax = %f\n", Tax);
+    printf("Net Amount = %f\n", net_amount);
+
+}
