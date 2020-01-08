@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+//determine the largest of 3 without logical operators.
+int main()
+{
+
+    int a, b, c;
+
+    printf("Enter the value of a: ");
+    scanf("%d", &a);
+
+    printf("Enter the value of b: ");
+    scanf("%d", &b);
+
+    printf("Enter the value of c: ");
+    scanf("%d", &c);
+
+
+    if((a/b) && (a/c))
+    {
+        printf("The number : %d is the largest", a);
+    }
+    else if((b/a) && (b/c))
+    {
+        printf("The number : %d is the largest", b);
+    }
+    else
+        printf("The number : %d is the largest", c);
+}
