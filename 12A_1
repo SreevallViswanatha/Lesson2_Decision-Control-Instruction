@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+//A company insures its drivers in the following cases:
+//a.	If the driver is married.
+//b.	If the driver is unmarried, male and above 30 years of age.
+//c.	If the driver is unmarried, female and above 25 years of age.
+//d.	In all other cases driver is not insured.
+//If the marital status, sex and age of the driver are the inputs, 
+//WAP to determine whether the driver should be insured or not. 
+//Use only “if” and “else” statements. Do not use Logical operators.
+
+int main()
+{
+    char sex, ms;
+    int age;
+    
+    printf("Enter age: ");
+    scanf("%d", &age);
+    
+    printf("Enter Sex - M for male and F for female: ");
+    scanf("%c", &sex);
+    
+    printf("Enter Marital status - M for married and U for UnMarried: ");
+    scanf("%c", &ms);
+    
+    if((ms == 'M') || (ms == 'U' && sex == 'M' && age > 30) || (ms == 'U' && sex == 'F' && age >25))
+        printf("Driver should be insured\n");
+    else
+        printf("Driver should not be insured\n");
+}
