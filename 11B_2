@@ -8,7 +8,7 @@
 //d.	In all other cases driver is not insured.
 //If the marital status, sex and age of the driver are the inputs, 
 //WAP to determine whether the driver should be insured or not. 
-//Use only “if” and “else” statements. Do not use Logical operators.
+//Use only “if” and “else” statements. Do not use Logical operators..
 
 int main()
 {
