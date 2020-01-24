@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <stdlib.h>
+//Determine the type of triangle.
+int main()
+{
+    int side1, side2, side3, a, b, c;
+
+    printf("\nEnter the first side of the triangle: ");
+    scanf("%d", &side1);
+
+    printf("\nEnter the second side of the triangle: ");
+    scanf("%d", &side2);
+
+    printf("\nEnter the third side of the triangle: ");
+    scanf("%d", &side3);
+
+    if(side1 != side2 && side2!=side3 && side3!= side1)
+        printf("The triangle is a SCALENE triangle");
+
+    if((side1 == side2) && (side2!=side3))
+        printf("\n\nThe triangle is a ISOSCELES triangle\n\n");
+
+    if((side2 == side3) && (side3 != side1))
+        printf("\n\nThe triangle is an ISOSCELES triangle\n\n");
+
+    if((side1 == side3) && (side3 != side2))
+        printf("\n\nThe triangle is an ISOSCELES triangle\n\n");
+
+    if(side1 == side2 && side2 == side3)
+        printf("\n\nThe triangle is an EQUILATERAL triangle\n\n");
+
+    a = (side1*side1) == (side2*side2)+(side3*side3);
+    b = (side2*side2) == (side1*side1)+(side3*side3);
+    c = (side3*side3) == (side1*side1)+(side2*side2);
+
+    if(a || b || c)
+        printf("\n\nThe triangle is a Right-Angled triangle\n\n");
+}
