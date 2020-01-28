@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+//calculation of gross salary
+
+int main()
+{
+    float bs, gs, da, hra;
+
+    printf("Enter basic salary: ");
+    scanf("%f", &bs);
+
+    hra = (bs<7500)? (bs * 10/100):1000;
+    da = (bs<7500)? (bs* 90/100):(bs * 98/100);
+
+    gs = bs + hra + da;
+    printf("gross salary = Rs. %f\n", gs);
+}
