@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+//Calculation of bonus
+int main()
+{
+    int cy, yoj, yos;
+    printf("Enter the current year and the year of joining: ");
+    scanf("%d%d", &cy, &yoj);
+
+    yos = cy - yoj;
+    printf("Bonus = $%d\n",((yos>3)? 2500 : 0));
+}
