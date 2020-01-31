@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//Determine the role of an employee.
+int main()
+{
+    float sal;
+    printf("Enter the salary");
+
+    scanf("%f", &sal);
+    (sal<15000?printf("Manager\n"):
+    (sal>=25000 &&sal<=40000?printf("Manager\n"):
+     (sal>=15000 && sal<25000? printf("Accountant\n"):
+      printf("Higher position.\n"))));
+}
