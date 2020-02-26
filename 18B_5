@@ -1,0 +1,22 @@
+#include <stdlib.h>
+
+//determine the largest of the three numbers.
+
+int main()
+{
+    int first, second, third, largest;
+    printf("\nEnter the first number: ");
+    scanf("%d", &first);
+
+    printf("\nEnter the second number: ");
+    scanf("%d", &second);
+
+    printf("\nEnter the third number: ");
+    scanf("%d", &third);
+
+    (first>second)?
+    ((first>third)?(largest = first):(largest = third)):
+    ((second>third)?(largest = second):(largest = third));
+
+    printf("\nThe largest number out of the three numbers you entered is : %d\n", largest);
+}
