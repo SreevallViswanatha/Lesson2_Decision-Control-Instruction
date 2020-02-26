@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//determine the smallest of the two numbers.
+
+int main()
+{
+    int a, b, smallest;
+    printf("\nEnter the first number: ");
+    scanf("%d", &a);
+
+    printf("\nEnter the second number: ");
+    scanf("%d", &b);
+
+    (a<b)?(smallest=a):(smallest=b);
+    printf("\nThe smallest number out of the two numbers you entered is : %d\n", smallest);
+}
