@@ -1,0 +1,20 @@
+#include <stdlib.h>
+//Find the youngest amongst three friends..
+int main()
+{
+    int ram, shyam, ajay, young;
+
+    printf("\nEnter age of Ram: ");
+    scanf("%d",&ram);
+
+    printf("\nEnter the age of Shyam: ");
+    scanf("%d", &shyam);
+
+    printf("\nEnter the age of Ajay: ");
+    scanf("%d", &ajay);
+
+    (ram<shyam)?
+    ((ram<ajay)?(young = ram):(young = ajay)):
+    ((shyam<ajay)?(young = shyam):(young = ajay));
+    printf("The youngest of Ram(%d), Shyam(%d), and Ajay(%d) is ::: %d\n", ram, shyam, ajay, young);
+}
