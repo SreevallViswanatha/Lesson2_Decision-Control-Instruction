@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//To find the absolute value of a number entered through keyboard...
+//To find the absolute value of a number entered through keyboard and print invalid input if the input is invalid.
 
 int main()
 {
