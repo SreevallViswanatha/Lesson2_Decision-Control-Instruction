@@ -17,7 +17,10 @@ int main()
     printf("\nEnter the values of x3 and y3 coordinates of first point: ");
     scanf("%d%d", &x3, &y3);
     
-    //calculate the slope of line between each pair of points.
+    //calculate the slope of line between each pair of points.\
+    slope1 = abs(x2-x1)/abs(y2-y1);
+    slope2 = abs(x3-x1)/abs(y3-y1);
+    slope3 = abs(x3-x2)/abs(y3-y1);
     
     if((slope1 == slope2)&&(slope1 == slope3))
         printf("Points are Co-linear\n");
